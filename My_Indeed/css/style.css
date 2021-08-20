@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+/********************** Styling navbar start *****************/
+.navbar{
+    font-family:'Open Sans';
+    width: 100%;
+    height: 3em;
+    display: flex;
+    border-bottom: 2px  rgb(203, 207, 203) solid;
+    justify-content: space-between;
+}
+.left-side{
+    width: 40%;
+    height: inherit;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+
+}
+.right-side{
+    width: 40%;
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.left-side img{
+    justify-content: center;
+    width: 15%;
+    height: 2.5em;
+    margin-left: 0.3rem;
+    margin-right: 1rem; 
+    cursor: pointer;
+}
+.nav-item-1{
+    width: fit-content;
+    height: inherit;
+    display:flex;
+    text-align: center;
+    align-items: center;
+    padding-right: 1rem;
+    color:#2d2d2d ;
+    cursor: pointer;
+}
+#Bold-text{
+    color: rgb(10, 93, 175); /*On utilise id pour un seul entité*/
+    font-weight: bold;
+}
+.pipe{
+    height: 1.3rem;
+    border-left: 1px darkgray solid;
+    margin: 0 0.7rem 0 0 ;
+}
+.nav-item-2{
+    width: fit-content;
+    height: inherit;
+    display:flex;
+    text-align: center;
+    align-items: center; /*center par rapport a height*/
+    padding-right: 1rem;
+    color:#2d2d2d ;
+    cursor: pointer;
+}
+.nav-item-1:hover{
+    border-bottom: solid rgb(7, 61, 161) 0.15rem;
+}
+.nav-item-2:hover{
+    border-bottom: solid rgb(7, 61, 161) 0.15rem;
+}
+/********************** Styling navbar end *****************/
+
+/********************** Styling main start *****************/
+
+.main{
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+}
+/********************** Styling main end *****************/
+.content{
+    font-family: 'Open Sans';
+    width: 62%;
+    height: 75vh;
+    display: flex;
+    margin-top: 6rem;
+    flex-direction: column;
+}
+.content-top{
+    display: flex;
+    flex-direction: column;
+}
+.slogan{
+    font-size: 2.7rem;
+    font-weight: bolder;
+    line-height: 1.25;
+    margin: 0 1rem 1.5rem 0;
+}
+.sous-slogan{
+font-size: 1.4rem;
+color: rgb(134, 134, 134);
+}
+.forms{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    margin-top: 1.4rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-company{
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+}
+.input-city{
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+}
+.input-company span{
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.input-city span{
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+.company , .city{
+    height: 5.5vh;
+    width: 100%;
+    border-radius: 0.5rem;
+    outline:none;
+    border-color: lightgrey;
+}
+.company{
+    background-image: url(/img/loupe.svg);
+    background-size: 8%;
+    background-position:right;
+    background-repeat: no-repeat;
+}
+.city{
+    background-image: url(/img/placeholder.svg);
+    background-size: 8%;
+    background-position:right ;
+    background-repeat: no-repeat;
+}
+.search{
+    width: 29%;
+    height: 6.3vh;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: #2557a7;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+input:focus{
+    border: rgb(89, 89, 252) solid 1px;
+    border-bottom: rgb(89, 89, 252) solid 5px;
+    outline: none;
+}
+.link-salaries{
+    margin: 2rem 0 2rem 0;
+    color: rgba(45, 48, 196, 0.781);
+}
+
+
+/********************** Styling the companies rating start *****************/
+
+.list-companies {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-companies span {
+    font-size: 1.5rem;
+}
+
+.list-companies-content {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.companie-item {
+    width: 30%;
+    height: 7rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.companie-item-top img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: .5rem;
+}
+
+.companie-item-top {
+    display: flex;
+   /*align-items: center;*/
+    /*justify-content: space-between;*/
+}
+
+.companie-item-top-content span:first-child {
+    font-size: .8rem;
+}
+
+.companie-item-top-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.companie-item-stars {
+    display: flex;
+    align-items: center;
+}
+
+.companie-item-stars img {
+    width: 5rem;
+    height: 2rem;
+}
+
+.companie-item-stars span {
+    font-size: .6rem;
+}
+
+.companie-item-bottom {
+    margin-top: 1rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.companie-item-bottom span {
+    font-size: .7rem;
+}
+
+/********************** Styling the companies rating End *****************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
